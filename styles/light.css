@@ -26,3 +26,36 @@
   --link-shadow-color: var(--basic-pink);
   --rec-color: var(--basic-pink);
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: var(--basic-pink);
+    --title-color: var(--title-pink);
+    --page-bg-color: var(--almost-white-bg);
+    --background-image: url("../images/cover-image-light.png");
+    --header-text-bg-color: var(--basic-pink);
+    --header-text-color: var(--almost-black);
+    --question-bg-color: var(--almost-white-bg);
+    --question-color: var(--almost-black);
+    --answer-title-bg-color: var(--basic-pink);
+    --answer-title-color: var(--almost-black);
+    --answer-text-bg-color: var(--almost-white-bg);
+    --answer-text-color: var(--almost-black);
+    --advice-title-bg-color: var(--basic-pink);
+    --advice-title-color: var(--almost-black);
+    --button-color: var(--almost-black);
+    --border-color-opacity: #32312D66;
+    --deco-color: var(--almost-black);
+    --rec-color: var(--basic-pink);
+  }
+  
+  .rec_empty::before,
+  .rec_empty::after {
+    display: none;
+  }
+}
+
+.theme-light .rec_empty::before,
+.theme-light .rec_empty::after {
+  display: none;
+}

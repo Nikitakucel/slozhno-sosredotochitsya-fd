@@ -65,3 +65,26 @@
   justify-self: end;
   margin: auto var(--decoration-gap);
 }
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: var(--corner-thickness) solid var(--deco-color);
+  border-right: var(--corner-thickness) solid var(--deco-color);
+  top: var(--decoration-gap);
+  right: var(--decoration-gap);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: var(--corner-thickness) solid var(--deco-color);
+  border-left: var(--corner-thickness) solid var(--deco-color);
+  left: var(--decoration-gap);
+  bottom: var(--decoration-gap);
+}
+
