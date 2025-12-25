@@ -88,3 +88,51 @@
   bottom: var(--decoration-gap);
 }
 
+.main {
+  margin-left: var(--decoration-gap);
+  margin-right: var(--decoration-gap);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 40px;
+}
+
+.section_why {
+  margin-top: var(--section-child-margin);
+}
+
+.section_what {
+  margin-top: 50px;
+}
+
+.section_how {
+  margin-top: 50px;
+}
+
+.advice_title_main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery_section {
+  margin-top: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+}
+
+.gallery__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__item {
+  
+}
