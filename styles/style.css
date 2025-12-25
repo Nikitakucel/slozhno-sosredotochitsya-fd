@@ -134,5 +134,132 @@
 }
 
 .gallery__item {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.footer {
+  height: max(100vh, var(--min-height));
+  position: relative;
+}
+
+.question {
+  font-size: var(--regular-font-size);
+  line-height: 1.3;
+  width: 100%;
+  color: var(--question-color);
+  margin-top: 20px;
+}
+
+.huge_title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.825;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
+  margin-left: var(--header-margin-left);
+}
+
+.footer_title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.card_title {
+  color: var(--answer-title-color);
+  background-color: var(--answer-title-bg-color);
+  font-size: inherit;
+}
+
+.card_text {
+  color: var(--answer-text-color);
+  background-color: var(--answer-text-bg-color);
+  font-weight: normal;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.advice_title {
+  font-size: var(--regular-font-size);
+  line-height: 1.3;
+  width: 100%;
+  font-weight: normal;
+  color: var(--advice-title-color);
+  background-color: var(--advice-title-bg-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.simple_link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.simple_link:focus {
+  outline: none;
+}
+
+.simple_link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.simple_link:hover {
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+}
+
+.rec_empty {
+  display: flex;
+  justify-self: end;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  line-height: 25px;
+  position: absolute;
+  width: 10px;
+  top: calc( var(--decoration-gap) - 10px) ;
+  right: calc( var(--decoration-gap) + 50px);
+}
+
+.rec_empty::before {
+  content: 'REC';
+  font-weight: normal;
+  display: none;
+  color: var(--rec-color);
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.rec_empty::after {
+  content: '';
+  position: absolute;
+  display: none;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--rec-color);
+  margin-left: 42px;
+  margin-top: 18px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.picture_question {
+  margin-bottom: 10px;
+}
+
+@media (width >= 768px) {
+
+}
+
+@media (width >= 1024px) {
   
 }
+
+
