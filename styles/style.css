@@ -326,6 +326,10 @@
   .question_how {
     margin-top: 20px;
   }
+  
+  .question_why {
+    margin-top: 20px;
+  }
 
   .card-section--why {
     display: grid;
@@ -338,7 +342,7 @@
   .card-section--what {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0px;
+    gap: 0;
   }
 
   .card-section--how {
