@@ -20,7 +20,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.theme-light) {
     --page-bg-color: var(--approximately-black);
     --accent-color: var(--real-red);
     --title-color:  #db00ff;

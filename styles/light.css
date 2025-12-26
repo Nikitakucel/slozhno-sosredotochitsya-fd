@@ -1,9 +1,3 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --accent-color: var(--basic-pink);
   --title-color: var(--title-pink);
@@ -13,10 +7,10 @@
   --header-text-color: var(--almost-black);
   --question-bg-color: var(--almost-white-bg);
   --question-color: var(--almost-black);
-  --answer-title-bg-color: var(--basic-pink);
-  --answer-title-color: var(--almost-black);
-  --answer-text-bg-color: var(--almost-white-bg);
-  --answer-text-color: var(--almost-black);
+  --card-title-bg-color: var(--basic-pink);
+  --card-title-color: var(--almost-black);
+  --card-text-bg-color: var(--almost-white-bg);
+  --card-text-color: var(--almost-black);
   --advice-title-bg-color: var(--basic-pink);
   --advice-title-color: var(--almost-black);
   --button-color: var(--almost-black);
@@ -28,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-light):not(.theme-dark) {
     --accent-color: var(--basic-pink);
     --title-color: var(--title-pink);
     --page-bg-color: var(--almost-white-bg);
