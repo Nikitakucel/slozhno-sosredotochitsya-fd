@@ -40,9 +40,20 @@
     --background-image:  url("../images/cover-image-dark.png");
     --deco-color: var(--real-red);
   }
+  
+  .rec_empty::before {
+    display: inline-block;
+  }
+  
+  .rec_empty::after {
+    display: inline-block;
+  }
 }
 
-.theme-dark .rec_empty::before,
+.theme-dark .rec_empty::before {
+  display: inline-block;
+}
+
 .theme-dark .rec_empty::after {
   display: inline-block;
 }

@@ -150,7 +150,6 @@
   line-height: 1.3;
   width: 100%;
   color: var(--question-color);
-  margin-top: 20px;
 }
 
 .huge_title {
@@ -447,7 +446,7 @@
     margin-top: 77px;
   }
 
-  .section_how {
+  /*.section_how {
     gap: 10px;
   }
 
@@ -458,7 +457,7 @@
 
   .footer {
     margin-top: 10px;
-  }
+  }*/
 
 }
 

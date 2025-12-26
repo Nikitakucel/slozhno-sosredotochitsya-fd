@@ -48,12 +48,12 @@
     --deco-color: var(--almost-black);
     --rec-color: var(--basic-pink);
   }
-}
-.rec_empty::before,
-.rec_empty::after {
+  
+  .rec_empty::before,
+  .rec_empty::after {
   display: none;
+  }
 }
-
 
 .theme-light .rec_empty::before,
 .theme-light .rec_empty::after {
